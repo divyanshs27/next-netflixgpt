@@ -1,9 +1,18 @@
-import React from 'react'
-
+'use client'
+import React, { useEffect } from 'react';
+import useNowPlayingMovies from '../hooks/useNowPlayingMovies';
+import MainContainer from '../components/MainContainer';
+import SecondaryContainer from '../components/SecondaryContainer';
 const Browse = () => {
+  useNowPlayingMovies();
   return (
-    <div>Browse</div>
+    <div>
+      <div>
+        Browse
+        <MainContainer/>
+      </div>
+    </div>
+    
   )
-}
-
-export default Browse
+};
+export default Browse;

@@ -1,11 +1,12 @@
 import React from 'react'
-import Login from '../Login/page'
-import Browse from '../Browse/page'
+import Login from './Login';
+
 const Body = () => {
+  
+  
   return (
     <div>
-        <Login/>
-        <Browse/>
+      <Login/>
     </div>
   )
 }
